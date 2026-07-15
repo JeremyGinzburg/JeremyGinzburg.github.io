@@ -166,17 +166,18 @@ footer {
 
 .project-image {
     width: 100%;
-    height: 280px;
-    background: #334155;
+    height: 300px;
+    overflow: hidden;
     border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #94a3b8;
     margin-bottom: 25px;
-    font-size: 1.2rem;
 }
 
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 .skills-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -211,4 +212,8 @@ footer {
 .research-card h3{
     color:#38bdf8;
     margin-bottom:12px;
+}
+
+.tube-image{
+    object-position: center bottom;
 }
