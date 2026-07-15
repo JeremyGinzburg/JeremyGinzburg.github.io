@@ -79,26 +79,27 @@ footer {
 }
 
 .hero-image {
-    flex: 1;
+    flex: 0.8;
     text-align: center;
 }
 
 .hero-image img {
-    width: 320px;
-    height: 320px;
+    width: 360px;
+    height: 360px;
     object-fit: cover;
     border-radius: 50%;
     border: 4px solid #38bdf8;
 }
 
 .hero h1 {
-    font-size: 4rem;
+    font-size: 3.4rem;
+    line-height: 1.1;
     margin-bottom: 15px;
 }
 
 .hero-subtitle {
-    font-size: 1.5rem;
-    color: #38bdf8;
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 
 .hero-school {
@@ -107,8 +108,7 @@ footer {
 }
 
 .hero-description {
-    max-width: 550px;
-    font-size: 1.15rem;
+    max-width: 480px;
 }
 
 .button {
@@ -162,4 +162,53 @@ footer {
 footer {
     border-top: 1px solid #1e293b;
     text-align: center;
+}
+
+.project-image {
+    width: 100%;
+    height: 280px;
+    background: #334155;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #94a3b8;
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+}
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
+
+.skill-box{
+    background:#1e293b;
+    padding:25px;
+    border-radius:12px;
+}
+
+.skill-box h3{
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+
+.skill-box p{
+    line-height:2;
+}
+
+/* ---------- Research ---------- */
+
+.research-card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:12px;
+    margin-top:25px;
+}
+
+.research-card h3{
+    color:#38bdf8;
+    margin-bottom:12px;
 }
