@@ -174,8 +174,16 @@ Designing a tendon-driven prosthetic hand that will ultimately use forearm EMG s
     <div class="mechanical-grid">
 
         <div class="mechanical-image">
-            <img src="Images/Four-Finger.png" alt="Four-Finger">
-        </div>
+
+    <img src="Images/Four-Finger.png" alt="CAD Model">
+
+
+
+<video controls loop playsinline>
+    <source src="Videos/Four Finger Actuation.mov" type="video/mp4">
+</video>
+
+</div>
 
         <div class="mechanical-content">
 
@@ -223,38 +231,70 @@ Designing a tendon-driven prosthetic hand that will ultimately use forearm EMG s
         </div>
 
     </div>
+<section class="electronics">
+
+    <h2>Electronics &amp; Control</h2>
+
+    <p class="section-intro">
+        The prototype is controlled using an Arduino Uno that independently
+        commands four SG90 micro servos through PWM outputs. An external
+        regulated 5V supply powers the servos while sharing a common ground
+        with the Arduino to ensure stable operation.
+    </p>
+
+    <div class="electronics-grid">
+
+        <!-- Left Column -->
+        <div>
+
+            <div class="electronics-card">
+
+                <h3>Current Hardware</h3>
+
+                <ul>
+                    <li>Arduino Uno</li>
+                    <li>4× SG90 micro servo motors</li>
+                    <li>External regulated 5V supply</li>
+                    <li>PWM servo control</li>
+                    <li>Arduino IDE firmware</li>
+                </ul>
+
+            </div>
+
+            <div class="wiring-diagram">
+                <img src="Images/Finger Wiring.png Wiring.png" alt="Arduino Wiring Diagram">
+            </div>
+
+            <p class="diagram-caption">
+                Wiring diagram showing independent PWM control of four SG90 servos
+                with a shared external 5V power rail and common ground reference.
+            </p>
+
+        </div>
+
+        <!-- Right Column -->
+        <div>
+
+            <div class="electronics-card">
+
+                <h3>Future EMG Integration</h3>
+
+                <ul>
+                    <li>MyoWare 2.0 EMG sensor</li>
+                    <li>MATLAB signal filtering</li>
+                    <li>EMG feature extraction</li>
+                    <li>Gesture classification</li>
+                    <li>Real-time prosthetic control</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
-<div class="prototype-grid">
-
-    <div class="prototype-video">
-
-        <video controls loop playsinline>
-            <source src="Videos/Four Finger Actuation.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-
-    </div>
-
-    <div class="prototype-info">
-
-        <h3>Prototype Demonstration</h3>
-
-        <p>
-            The current prototype validates the tendon-driven mechanical
-            architecture using four independently actuated SG90 servo motors.
-            Each finger flexes through fishing-line tendons while elastic
-            bands provide passive extension, demonstrating smooth and
-            repeatable grasping motion prior to EMG integration.
-        </p>
-
-        <ul>
-            <li>Four synchronized tendon-driven fingers</li>
-            <li>Arduino-controlled servo actuation</li>
-            <li>Passive elastic finger extension</li>
-            <li>Mechanical validation before EMG control</li>
-        </ul>
-
-    </div>
-
-</div>
+<p class="diagram-caption">
+    Wiring diagram showing independent PWM control of four SG90 servos with a shared
+    external 5V power rail and common ground reference.
+</p>
