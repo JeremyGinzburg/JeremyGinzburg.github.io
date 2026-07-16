@@ -83,3 +83,156 @@ Designing a tendon-driven prosthetic hand that will ultimately use forearm EMG s
 </div>
 
 </section>
+
+<section class="architecture">
+
+    <h2>System Architecture</h2>
+
+    <p class="section-intro">
+        The current prototype validates the mechanical actuation system before
+        integrating EMG signal processing. Four independently driven fingers are
+        actuated by SG90 servos through tendon routing, with Arduino Uno providing
+        synchronized control. Future iterations will replace manual commands with
+        real-time forearm EMG input.
+    </p>
+
+   <section class="architecture">
+
+    <h2>System Architecture</h2>
+
+    <p class="section-intro">
+        The current prototype validates the mechanical actuation system before
+        integrating EMG signal processing. Four independently actuated fingers
+        are driven by SG90 servo motors through tendon routing, with an Arduino
+        Uno providing synchronized control. Future iterations will replace
+        manual servo commands with real-time forearm EMG input.
+    </p>
+
+    <div class="architecture-grid">
+
+        <div class="architecture-card">
+
+            <h3>Mechanical System</h3>
+
+            <ul>
+                <li>Four tendon-driven fingers</li>
+                <li>Modular 3D-printed design</li>
+                <li>Fishing line tendon routing</li>
+                <li>Elastic band finger extension</li>
+                <li>Four tendon-driven fingers</li>
+
+
+<li>M3 screw-pin joints</li>
+<li>Independent servo actuation</li>
+            </ul>
+
+        </div>
+
+        <div class="architecture-card">
+
+            <h3>Electronics &amp; Software</h3>
+
+            <h4>Current</h4>
+
+            <ul>
+                <li>Arduino Uno</li>
+                <li>4× SG90 micro servos</li>
+                <li>External 5V power supply</li>
+                <li>Arduino IDE control firmware</li>
+            </ul>
+
+            <h4>Planned</h4>
+
+            <ul>
+                <li>MyoWare EMG sensor</li>
+                <li>MATLAB signal filtering</li>
+                <li>EMG signal processing</li>
+                <li>Real-time control algorithm</li>
+            </ul>
+
+        </div>
+
+        <div class="architecture-card">
+
+            <h3>Control Strategy</h3>
+
+            <ul>
+                <li>Single EMG signal controls all fingers</li>
+<li>Synchronized finger flexion</li>
+<li>Servo angle determines grip strength</li>
+<li>Serial command testing</li>
+<li>Future EMG-based control</li>
+<li>Modular architecture for expansion</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="mechanical-design">
+
+    <h2>Mechanical Design</h2>
+
+    <p class="section-intro">
+        The prosthetic hand was designed from the ground up in SolidWorks with an emphasis on
+        modularity, simple manufacturing, and tendon-driven actuation. Each finger was iteratively
+        redesigned through multiple CAD and 3D printing cycles to improve joint motion, tendon
+        routing, and overall reliability.
+    </p>
+
+    <div class="mechanical-grid">
+
+        <div class="mechanical-image">
+            <img src="Images/Four-Finger.png" alt="Four-Finger">
+        </div>
+
+        <div class="mechanical-content">
+
+            <h3>Design Philosophy</h3>
+
+            <p>
+                Rather than replicating the complexity of the human hand, this prototype
+                simplifies the mechanical system by coupling finger motion while preserving
+                smooth tendon-driven flexion. The modular architecture allows each finger
+                to be redesigned independently without requiring a complete rebuild.
+            </p>
+
+            <div class="feature-grid">
+
+                <div class="feature-box">
+                    <h4>Actuation</h4>
+                    <p>
+                        Fishing line tendons driven by SG90 servos generate finger flexion.
+                    </p>
+                </div>
+
+                <div class="feature-box">
+                    <h4>Extension</h4>
+                    <p>
+                        Elastic bands provide passive finger extension after tendon release.
+                    </p>
+                </div>
+
+                <div class="feature-box">
+                    <h4>Construction</h4>
+                    <p>
+                        Modular PLA components assembled using M3 fasteners.
+                    </p>
+                </div>
+
+                <div class="feature-box">
+                    <h4>Manufacturing</h4>
+                    <p>
+                        Designed entirely in SolidWorks and fabricated using FDM 3D printing.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
