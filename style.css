@@ -53,11 +53,18 @@ nav a:hover {
 /* ---------- Sections ---------- */
 
 section,
-footer {
-    width: 85%;
-    max-width: 1000px;
-    margin: auto;
-    padding: 80px 0;
+footer{
+    width:80%;
+    max-width:900px;
+    margin:auto;
+    padding:10px 0;
+}
+section h2{
+    color:#38bdf8;
+    font-size:2.8rem;
+    font-weight:700;
+    margin-bottom:20px;
+    padding-left:25px;
 }
 
 /* ---------- Hero ---------- */
@@ -66,12 +73,11 @@ footer {
     width: 85%;
     max-width: 1100px;
     margin: auto;
-    min-height: 80vh;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 60px;
+    gap: 20px;
 }
 
 .hero-text {
@@ -84,8 +90,8 @@ footer {
 }
 
 .hero-image img {
-    width: 360px;
-    height: 360px;
+    width: 330px;
+    height: 330px;
     object-fit: cover;
     border-radius: 50%;
     border: 4px solid #38bdf8;
@@ -108,7 +114,9 @@ footer {
 }
 
 .hero-description {
-    max-width: 480px;
+    max-width: 540px;
+    line-height: 1.8;
+    margin-top: 18px;
 }
 
 .button {
@@ -129,12 +137,11 @@ footer {
 
 /* ---------- Project Cards ---------- */
 
-.project-card {
-    background: #1e293b;
-    border-radius: 14px;
-    padding: 30px;
-    margin-top: 30px;
-    transition: transform .25s;
+.project-card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:18px;
+    margin:30px 0;
 }
 
 .project-card:hover {
@@ -142,7 +149,8 @@ footer {
 }
 
 .project-card h3 {
-    margin-bottom: 15px;
+    font-size:2rem;
+    margin-bottom: 14px;
 }
 
 .project-card a {
@@ -151,6 +159,7 @@ footer {
     color: #38bdf8;
     text-decoration: none;
     font-weight: bold;
+    font-size:3.2 rem;
 }
 
 .project-card a:hover {
@@ -164,18 +173,31 @@ footer {
     text-align: center;
 }
 
-.project-image {
-    width: 100%;
-    height: 570px;
-    overflow: hidden;
-    border-radius: 10px;
-    margin-bottom: 25px;
+.project-image{
+    width:100%;
+    max-width:675px;
+    max-height:400px;
+    margin:25px auto;
+    border-radius:18px;
+    overflow:hidden;
 }
 
-.project-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.project-image img{
+    width:100%;
+    height:auto;
+    display:block;
+    object-fit:contain;
+    background:transparent;
+}
+.tube-image{
+    max-width:700px;
+}
+
+.tube-image img{
+    height:350px;
+    width:100%;
+    object-fit:cover;
+    object-position:center;
 }
 .skills-grid{
     display:grid;
@@ -203,9 +225,15 @@ footer {
 
 .research-card{
     background:#1e293b;
-    padding:30px;
+    padding:24px;
     border-radius:12px;
-    margin-top:25px;
+    margin-top:20px;
+
+    transition:transform .25s ease;
+}
+.research-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 30px rgba(0,0,0,.25);
 }
 
 .research-card h3{

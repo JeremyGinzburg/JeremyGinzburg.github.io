@@ -2,11 +2,14 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>EMG-Controlled Prosthetic Hand</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -21,271 +24,292 @@
 
 </header>
 
+
+<!-- ========================================= -->
+<!-- Hero -->
+<!-- ========================================= -->
+
 <section class="hero">
 
-<div class="hero-text">
+    <div class="hero-text">
 
-<h1>EMG-Controlled Prosthetic Hand</h1>
+        <h1>EMG-Controlled Prosthetic Hand</h1>
 
-<p class="hero-subtitle">
-(In Progress)
-</p>
+        <p class="hero-subtitle">
+            (In Progress)
+        </p>
 
-<p class="hero-description">
-
-Designing a tendon-driven prosthetic hand that will ultimately use forearm EMG signals to control grasping motions in real time. The current prototype validates the mechanical design using Arduino-controlled servo motors prior to EMG integration.
-
-</p>
-
-</div>
-
-<div class="hero-image">
-
-<img src="Images/Four Finger Prototype.jpeg" alt="Four Finger Prototype">
-
-</div>
-
-</section>
-
-<section>
-
-<div class="overview-grid">
-
-    <div class="overview-card">
-
-        <h2>Project Overview</h2>
-
-        <p>
-            This project focuses on designing and prototyping a low-cost,
-            tendon-driven prosthetic hand using additive manufacturing,
-            embedded electronics, and biomedical engineering principles.
-            The long-term goal is to convert forearm EMG signals into
-            coordinated finger motion for intuitive prosthetic control.
+        <p class="hero-description">
+            Designing a tendon-driven prosthetic hand that will ultimately use
+            forearm EMG signals to control grasping motions in real time.
         </p>
 
     </div>
 
-    <div class="overview-card">
+    <div class="hero-image">
 
-        <h2>Design Objectives</h2>
-
-        <ul>
-            <li>Affordable 3D-printed prosthetic hand</li>
-            <li>Tendon-driven finger actuation</li>
-            <li>Arduino-based control electronics</li>
-            <li>EMG signal integration</li>
-            <li>Coordinated grasping motion</li>
-            <li>Modular design</li>
-        </ul>
+        <img src="Images/Four Finger Prototype.jpeg"
+             alt="Four Finger Prototype">
 
     </div>
 
-</div>
+</section>
+
+
+<!-- ========================================= -->
+<!-- Overview -->
+<!-- ========================================= -->
+
+<section>
+
+    <div class="overview-grid">
+
+        <div class="overview-card">
+
+            <h2>Project Overview</h2>
+
+            <p>
+
+                This project focuses on designing and prototyping a low-cost,
+                tendon-driven prosthetic hand using 3D printed parts,
+                embedded electronics, and signal processing.
+
+                The long-term goal is to convert forearm EMG signals into
+                coordinated finger motion for intuitive prosthetic control.
+
+            </p>
+
+        </div>
+
+        <div class="overview-card">
+
+            <h2>Design Objectives</h2>
+
+            <ul>
+
+                <li>Affordable 3D-printed prosthetic hand</li>
+
+                <li>Tendon-driven finger actuation</li>
+
+                <li>Arduino-based control electronics</li>
+
+                <li>EMG signal integration</li>
+
+                <li>Coordinated grasping motion</li>
+
+            </ul>
+
+        </div>
+
+    </div>
 
 </section>
+
+
+<!-- ========================================= -->
+<!-- System Architecture -->
+<!-- ========================================= -->
 
 <section class="architecture">
 
-    
     <h2>System Architecture</h2>
 
     <p class="section-intro">
+
         The current prototype validates the mechanical actuation system before
-        integrating EMG signal processing. Four independently actuated fingers
-        are driven by SG90 servo motors through tendon routing, with an Arduino
-        Uno providing synchronized control. Future iterations will replace
-        manual servo commands with real-time forearm EMG input.
+        integrating EMG signal processing.
+
+        Four independently actuated fingers are driven by SG90 servo motors
+        through tendon routing while an Arduino Uno provides synchronized
+        control.
+
+        Future iterations will replace pre-programmed servo commands with
+        real-time forearm EMG input.
+
     </p>
+
 
     <div class="architecture-grid">
 
-        <div class="architecture-card">
 
-            <h3>Mechanical System</h3>
-
-            <ul>
-                <li>Four tendon-driven fingers</li>
-                <li>Modular 3D-printed design</li>
-                <li>Fishing line tendon routing</li>
-                <li>Elastic band finger extension</li>
-                <li>Four tendon-driven fingers</li>
-
-
-<li>M3 screw-pin joints</li>
-<li>Independent servo actuation</li>
-            </ul>
-
-        </div>
+        <!-- Mechanical -->
 
         <div class="architecture-card">
 
-            <h3>Electronics &amp; Software</h3>
+    <h3>Mechanical System</h3>
 
-            <h4>Current</h4>
+    <h4>Current</h4>
 
-            <ul>
-                <li>Arduino Uno</li>
-                <li>4× SG90 micro servos</li>
-                <li>External 5V power supply</li>
-                <li>Arduino IDE control firmware</li>
-            </ul>
+    <ul>
+        <li>Four tendon-driven fingers</li>
+        <li>Modular 3D-printed finger design</li>
+        <li>Fishing line tendon routing</li>
+        <li>Elastic-band finger extension</li>
+        <li>Independent SG90 servo actuation</li>
+    </ul>
 
-            <h4>Planned</h4>
+    <h4>Future</h4>
 
-            <ul>
-                <li>MyoWare EMG sensor</li>
-                <li>MATLAB signal filtering</li>
-                <li>EMG signal processing</li>
-                <li>Real-time control algorithm</li>
-            </ul>
+    <ul>
+        <li>Fully articulated thumb</li>
+        <li>Integrated palm assembly</li>
+        <li>Internal tendon routing</li>
+        <li>Built-in wiring channels</li>
+        <li>Integrated electronics compartment</li>
+    </ul>
 
-        </div>
+</div>
 
-        <div class="architecture-card">
+<div class="architecture-card">
 
-            <h3>Control Strategy</h3>
+    <h3>Software/Electronics</h3>
 
-            <ul>
-                <li>Single EMG signal controls all fingers</li>
-<li>Synchronized finger flexion</li>
-<li>Servo angle determines grip strength</li>
-<li>Serial command testing</li>
-<li>Future EMG-based control</li>
-<li>Modular architecture for expansion</li>
-            </ul>
+    <h4>Current</h4>
 
-        </div>
+    <ul>
+        <li>Arduino Uno</li>
+        <li>4× SG90 micro servos</li>
+        <li>External regulated 5V supply</li>
+        <li>Arduino IDE firmware</li>
+        <li>PWM servo control</li>
+    </ul>
+
+    <h4>Future</h4>
+
+    <ul>
+        <li>MyoWare 2.0 EMG sensor</li>
+        <li>MATLAB signal filtering</li>
+        <li>EMG feature extraction</li>
+        <li>Real-time signal processing</li>
+        <li>Embedded control electronics</li>
+    </ul>
+
+</div>
+
+<div class="architecture-card">
+
+    <h3>Control Strategy</h3>
+
+    <h4>Current</h4>
+
+    <ul>
+        <li>Manual serial commands</li>
+        <li>Synchronized finger flexion</li>
+        <li>Servo angle controls grip strength</li>
+        <li>Independent PWM outputs</li>
+        <li>Mechanical validation testing</li>
+    </ul>
+
+    <h4>Future</h4>
+
+    <ul>
+        <li>Real-time EMG processing</li>
+        <li>Muscle-intent detection</li>
+        <li>EMG-based grasp control</li>
+        <li>Adaptive grip force</li>
+        <li>Closed-loop prosthetic control</li>
+    </ul>
+
+</div>
 
     </div>
 
 </section>
+<!-- ========================================= -->
+<!-- Mechanical Design -->
+<!-- ========================================= -->
 
 <section class="mechanical-design">
 
     <h2>Mechanical Design</h2>
 
     <p class="section-intro">
-        The prosthetic hand was designed from the ground up in SolidWorks with an emphasis on
-        modularity, simple manufacturing, and tendon-driven actuation. Each finger was iteratively
-        redesigned through multiple CAD and 3D printing cycles to improve joint motion, tendon
-        routing, and overall reliability.
+
+        The prosthetic hand was designed entirely in SolidWorks with an emphasis on
+        modularity, low manufacturing cost, and tendon-driven actuation. Each
+        finger underwent multiple design iterations to improve joint motion,
+        tendon routing, and assembly before being integrated into the complete
+        four-finger prototype.
+
     </p>
 
     <div class="mechanical-grid">
 
+        <!-- Left Side -->
+
         <div class="mechanical-image">
 
-    <img src="Images/Four-Finger.png" alt="CAD Model">
+            <img src="Images/Four-Finger.png" alt="CAD Model">
+
+            <video controls loop playsinline>
+
+                <source src="Videos/Four Finger Actuation.mov" type="video/mp4">
+
+            </video>
+
+        </div>
 
 
-
-<video controls loop playsinline>
-    <source src="Videos/Four Finger Actuation.mov" type="video/mp4">
-</video>
-
-</div>
+        <!-- Right Side -->
 
         <div class="mechanical-content">
 
             <h3>Design Philosophy</h3>
 
             <p>
-                Rather than replicating the complexity of the human hand, this prototype
-                simplifies the mechanical system by coupling finger motion while preserving
-                smooth tendon-driven flexion. The modular architecture allows each finger
-                to be redesigned independently without requiring a complete rebuild.
+
+                This prototype focuses on achieving reliable grasping through a
+                simplified tendon-driven mechanism. Each finger is independently
+                actuated by a servo motor while remaining modular so components can
+                be redesigned without rebuilding the entire hand.
+
             </p>
 
             <div class="feature-grid">
 
                 <div class="feature-box">
+
                     <h4>Actuation</h4>
+
                     <p>
-                        Fishing line tendons driven by SG90 servos generate finger flexion.
+                        Fishing line tendons driven by SG90 servos generate finger
+                        flexion.
                     </p>
+
                 </div>
 
                 <div class="feature-box">
+
                     <h4>Extension</h4>
+
                     <p>
-                        Elastic bands provide passive finger extension after tendon release.
+                        Elastic bands provide passive finger extension once tendon
+                        tension is released.
                     </p>
+
                 </div>
 
                 <div class="feature-box">
+
                     <h4>Construction</h4>
+
                     <p>
-                        Modular PLA components assembled using M3 fasteners.
+                        Modular PLA components assembled using M3 fasteners and
+                        printed on an FDM 3D printer.
                     </p>
+
                 </div>
 
                 <div class="feature-box">
+
                     <h4>Manufacturing</h4>
+
                     <p>
-                        Designed entirely in SolidWorks and fabricated using FDM 3D printing.
+                        Designed entirely in SolidWorks with iterative CAD and
+                        prototype testing.
                     </p>
+
                 </div>
-
-            </div>
-
-        </div>
-
-    </div>
-<section class="electronics">
-
-    <h2>Electronics &amp; Control</h2>
-
-    <p class="section-intro">
-        The prototype is controlled using an Arduino Uno that independently
-        commands four SG90 micro servos through PWM outputs. An external
-        regulated 5V supply powers the servos while sharing a common ground
-        with the Arduino to ensure stable operation.
-    </p>
-
-    <div class="electronics-grid">
-
-        <!-- Left Column -->
-        <div>
-
-            <div class="electronics-card">
-
-                <h3>Current Hardware</h3>
-
-                <ul>
-                    <li>Arduino Uno</li>
-                    <li>4× SG90 micro servo motors</li>
-                    <li>External regulated 5V supply</li>
-                    <li>PWM servo control</li>
-                    <li>Arduino IDE firmware</li>
-                </ul>
-
-            </div>
-
-            <div class="wiring-diagram">
-                <img src="Images/Finger Wiring.png Wiring.png" alt="Arduino Wiring Diagram">
-            </div>
-
-            <p class="diagram-caption">
-                Wiring diagram showing independent PWM control of four SG90 servos
-                with a shared external 5V power rail and common ground reference.
-            </p>
-
-        </div>
-
-        <!-- Right Column -->
-        <div>
-
-            <div class="electronics-card">
-
-                <h3>Future EMG Integration</h3>
-
-                <ul>
-                    <li>MyoWare 2.0 EMG sensor</li>
-                    <li>MATLAB signal filtering</li>
-                    <li>EMG feature extraction</li>
-                    <li>Gesture classification</li>
-                    <li>Real-time prosthetic control</li>
-                </ul>
 
             </div>
 
@@ -294,7 +318,69 @@ Designing a tendon-driven prosthetic hand that will ultimately use forearm EMG s
     </div>
 
 </section>
-<p class="diagram-caption">
-    Wiring diagram showing independent PWM control of four SG90 servos with a shared
-    external 5V power rail and common ground reference.
-</p>
+
+
+
+<!-- ========================================= -->
+<!-- Electronics & Control -->
+<!-- ========================================= -->
+
+<section class="electronics">
+
+    <h2>Electronics &amp; Control</h2>
+
+    <p class="section-intro">
+        The prototype is controlled using an Arduino Uno that independently commands
+        four SG90 micro servos through PWM outputs. An external regulated 5V supply
+        powers the servos while sharing a common ground with the Arduino to ensure
+        stable operation.
+    </p>
+
+    <div class="electronics-grid">
+
+        <div class="electronics-card">
+
+            <h3>Current Hardware</h3>
+
+            <ul>
+                <li>Arduino Uno</li>
+                <li>4× SG90 Micro Servos</li>
+                <li>External Regulated 5V Power Supply</li>
+                <li>PWM Servo Control</li>
+                <li>Arduino IDE Firmware</li>
+            </ul>
+
+        </div>
+
+        <div class="electronics-card">
+
+            <h3>Future EMG Integration</h3>
+
+            <ul>
+                <li>MyoWare 2.0 EMG Sensor</li>
+                <li>MATLAB Signal Filtering</li>
+                <li>EMG Feature Extraction</li>
+                <li>Gesture Classification</li>
+                <li>Real-Time Prosthetic Control</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="wiring-diagram">
+
+        <img src="Images/Finger Wiring.png" alt="Arduino Wiring Diagram">
+
+        <p class="diagram-caption">
+            Wiring diagram showing independent PWM control of four SG90 servos with a shared
+            external 5V power rail and common ground reference.
+        </p>
+
+    </div>
+
+</section>
+
+</body>
+
+</html>
