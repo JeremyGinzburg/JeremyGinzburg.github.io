@@ -373,142 +373,244 @@
 </section>
 
 <!-- ========================================= -->
-<!-- Engineering Development Log -->
+<!-- Engineering Development Timeline -->
 <!-- ========================================= -->
 
 <section class="timeline">
 
-    <h2>Engineering Development Log</h2>
+    <h2>Engineering Development Timeline</h2>
 
     <p class="section-intro">
-        The prototype has been developed through iterative CAD design, rapid
-        prototyping, electronics integration, and mechanical testing. Each stage
-        introduced new design challenges that guided the next iteration of the
-        system.
+        The prosthetic hand evolved through rapid CAD iteration, mechanical testing,
+        embedded programming, and hardware integration. The milestones below highlight
+        the major engineering decisions that transformed the project from an initial
+        concept into a functioning four-finger prototype.
     </p>
 
-    <div class="timeline-grid">
+    <!-- ========================================= -->
 
-        <!-- June 25 -->
-        <div class="timeline-card">
+    <div class="timeline-card">
 
-            <div class="timeline-date">
-                June 25, 2026
-            </div>
+        <div class="timeline-header">
 
-            <h3>Concept Research</h3>
-
-            <p>
-                Investigated existing prosthetic hand mechanisms, tendon-driven
-                actuation, and wrist designs to establish the overall architecture
-                for the project.
-            </p>
-
-            <img src="Images/Timeline/research.png" alt="Research">
+            <h3>Research & Initial Finger Design</h3>
+            
+            <span class="timeline-date">
+                June 25 – June 29
+            </span>
 
         </div>
 
-        <!-- June 26-29 -->
+        <div class="timeline-gallery">
 
-        <div class="timeline-card">
-
-            <div class="timeline-date">
-                June 26 – June 29
-            </div>
-
-            <h3>First Finger Prototype</h3>
-
-            <p>
-                Designed the fingertip, middle phalanx, and base in SolidWorks.
-                Printed multiple iterations to improve joint alignment, screw
-                tolerances, and tendon routing.
-            </p>
-
-            <img src="Images/Timeline/finger-cad.png" alt="CAD Finger">
+            <img src="Images/research.jpg" alt="">
+            <img src="Images/Fingertip1.png" alt="">
+            <img src="Images/Printed Finger.png" alt="">
 
         </div>
 
-        <!-- July 1-3 -->
+        <p>
+            Investigated tendon-driven prosthetic hand designs and human hand
+            biomechanics before designing the first articulated finger in
+            SolidWorks. Multiple CAD revisions and 3D printed prototypes refined
+            joint geometry, tendon routing, and overall finger motion.
+        </p>
 
-        <div class="timeline-card">
+    </div>
 
-            <div class="timeline-date">
-                July 1 – July 3
-            </div>
+    <!-- ========================================= -->
 
-            <h3>Tendon Mechanism</h3>
+    <div class="timeline-card">
 
-            <p>
-                Replaced the original tendon routing, increased hole sizes,
-                integrated elastic bands, and achieved the first fully functional
-                tendon-driven finger.
-            </p>
+        <div class="timeline-header">
 
-            <img src="Images/Timeline/finger-test.jpg" alt="Finger Test">
-
-        </div>
-
-        <!-- July 4-9 -->
-
-        <div class="timeline-card">
-
-            <div class="timeline-date">
-                July 4 – July 9
-            </div>
-
-            <h3>Servo Integration</h3>
-
-            <p>
-                Transitioned from manual tendon actuation to SG90 servos using an
-                Arduino Uno. Developed servo mounting hardware and custom firmware
-                for adjustable finger motion.
-            </p>
-
-            <img src="Images/Timeline/servo.jpg" alt="Servo">
+            <h3>Functional Tendon Finger</h3>
+            
+            <span class="timeline-date">
+                July 1 – July 8
+            </span>
 
         </div>
 
-        <!-- July 10 -->
+        <div class="timeline-gallery">
 
-        <div class="timeline-card">
+            <img src="Images/Tendon Finger.jpeg" alt="">
 
-            <div class="timeline-date">
-                July 10
-            </div>
+            <video controls>
+                <source src="Videos/Finger Motion.mov">
+            </video>
 
-            <h3>Four-Servo Electronics</h3>
-
-            <p>
-                Designed the complete four-servo wiring architecture, validated the
-                circuit in TinkerCAD, and prepared the hardware using an external
-                regulated power supply.
-            </p>
-
-            <img src="Images/Timeline/wiring.png" alt="Wiring">
+            <img src="Images/Servo Mount.png" alt="">
 
         </div>
 
-        <!-- Current -->
+        <p>
+            Successfully demonstrated tendon-driven finger motion using fishing line
+            and elastic return bands. The design was then upgraded with an SG90 servo,
+            redesigned mounting hardware, and permanent servo integration.
+        </p>
 
-        <div class="timeline-card current">
+    </div>
 
-            <div class="timeline-date">
-                Current
-            </div>
+    <!-- ========================================= -->
+
+    <div class="timeline-card">
+
+        <div class="timeline-header">
+
+            <h3>Embedded Control System</h3>
+            
+            <span class="timeline-date">
+                July 9 – July 10
+            </span>
+
+        </div>
+
+        <div class="timeline-gallery">
+
+            <img src="Images/arduino-code.png" alt="">
+            <img src="Images/breadboard.jpg" alt="">
+            <img src="Images/tinkercad.png" alt="">
+
+        </div>
+
+        <p>
+            Developed Arduino firmware for programmable finger flexion, designed the
+            four-servo control circuit in TinkerCAD, and validated simultaneous
+            control using an external regulated power supply.
+        </p>
+
+    </div>
+
+    <!-- ========================================= -->
+
+    <div class="timeline-card">
+
+        <div class="timeline-header">
 
             <h3>Four-Finger Prototype</h3>
+            
+            <span class="timeline-date">
+                July 11 – Present
+            </span>
 
-            <p>
-                Building and testing the complete four-finger mechanism while
-                calibrating tendon lengths, servo angles, and mechanical alignment
-                prior to palm development and EMG integration.
-            </p>
+        </div>
 
-            <img src="Images/Timeline/prototype.jpg" alt="Current Prototype">
+        <div class="timeline-gallery">
+
+            <img src="Images/four-finger-holder.png" alt="">
+            <img src="Images/four-finger-prototype.jpg" alt="">
+
+            <video controls>
+                <source src="Videos/Four Finger Actuation.mov">
+            </video>
+
+        </div>
+
+        <p>
+            Expanded the design into a synchronized four-finger prosthetic hand,
+            integrating mechanical, electrical, and software subsystems into a
+            complete prototype that now serves as the foundation for future EMG
+            control and palm development.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- Future Development -->
+<!-- ========================================= -->
+
+<section class="future-development">
+
+    <h2>Future Development</h2>
+
+    <p class="section-intro">
+        While the current prototype demonstrates a functional tendon-driven
+        four-finger mechanism, future work will focus on completing the full
+        prosthetic hand and transitioning toward intuitive EMG-based control.
+    </p>
+
+    <div class="future-grid">
+
+        <!-- Mechanical -->
+
+        <div class="future-card">
+
+            <h3>Mechanical Development</h3>
+
+            <ul>
+
+                <li>Design and manufacture a complete prosthetic palm assembly</li>
+
+                <li>Add an opposable thumb to enable more natural grasping</li>
+
+                <li>Integrate servo motors directly into the palm structure</li>
+
+                <li>Route tendons and wiring internally for a cleaner design</li>
+
+                <li>Improve overall ergonomics and manufacturability</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Electronics -->
+
+        <div class="future-card">
+
+            <h3>Electronics Integration</h3>
+
+            <ul>
+
+                <li>Replace the breadboard with a custom PCB</li>
+
+                <li>Add integrated battery power for portability</li>
+
+                <li>Improve cable management and connector reliability</li>
+
+                <li>Miniaturize the embedded electronics package</li>
+
+                <li>Create a fully self-contained electrical system</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Control -->
+
+        <div class="future-card">
+
+            <h3>EMG Control System</h3>
+
+            <ul>
+
+                <li>Integrate MyoWare 2.0 surface EMG sensors</li>
+
+                <li>Develop real-time signal filtering algorithms</li>
+
+                <li>Implement EMG feature extraction and gesture classification</li>
+
+                <li>Replace manual Arduino commands with muscle-driven control</li>
+
+                <li>Achieve intuitive, real-time prosthetic finger motion</li>
+
+            </ul>
 
         </div>
 
     </div>
+
+</section>
+<section class="closing-statement">
+
+    <p>
+        This project establishes a modular mechanical and electrical foundation
+        for future EMG-controlled prosthetic hand research, with upcoming work
+        focused on palm development, embedded electronics, and real-time
+        biosignal processing.
+    </p>
 
 </section>
 
