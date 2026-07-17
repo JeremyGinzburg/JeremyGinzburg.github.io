@@ -16,11 +16,11 @@
 
 <header>
 
-    <div class="logo">JG</div>
+    <a href="../../index.html" class="logo">JG</a>
 
     <nav>
-        <a href="../../index.html">Home</a>
-    </nav>
+    <a href="../../index.html">← Back to Portfolio</a>
+</nav>
 
 </header>
 
@@ -141,11 +141,10 @@
     <h4>Current</h4>
 
     <ul>
-        <li>Four tendon-driven fingers</li>
-        <li>Modular 3D-printed finger design</li>
+        <li>3D printed tendon-driven fingers</li>
         <li>Fishing line tendon routing</li>
         <li>Elastic-band finger extension</li>
-        <li>Independent SG90 servo actuation</li>
+        <li>SG90 servo actuation</li>
     </ul>
 
     <h4>Future</h4>
@@ -153,7 +152,6 @@
     <ul>
         <li>Fully articulated thumb</li>
         <li>Integrated palm assembly</li>
-        <li>Internal tendon routing</li>
         <li>Built-in wiring channels</li>
         <li>Integrated electronics compartment</li>
     </ul>
@@ -170,7 +168,6 @@
         <li>Arduino Uno</li>
         <li>4× SG90 micro servos</li>
         <li>External regulated 5V supply</li>
-        <li>Arduino IDE firmware</li>
         <li>PWM servo control</li>
     </ul>
 
@@ -196,7 +193,6 @@
         <li>Manual serial commands</li>
         <li>Synchronized finger flexion</li>
         <li>Servo angle controls grip strength</li>
-        <li>Independent PWM outputs</li>
         <li>Mechanical validation testing</li>
     </ul>
 
@@ -224,94 +220,77 @@
     <h2>Mechanical Design</h2>
 
     <p class="section-intro">
-
-        The prosthetic hand was designed entirely in SolidWorks with an emphasis on
-        modularity, low manufacturing cost, and tendon-driven actuation. Each
-        finger underwent multiple design iterations to improve joint motion,
-        tendon routing, and assembly before being integrated into the complete
-        four-finger prototype.
-
+        The prosthetic hand was designed entirely in SolidWorks with a focus on
+        modularity, low-cost manufacturing, and tendon-driven actuation. Multiple
+        design iterations improved joint motion, tendon routing, and overall
+        assembly before integration into the complete four-finger prototype.
     </p>
 
-    <div class="mechanical-grid">
+    <div class="feature-grid">
 
-        <!-- Left Side -->
+        <div class="feature-box">
+            <h4>Tendon Actuation</h4>
+            <p>
+                Fishing line tendons driven by independent SG90 servo motors
+                generate finger flexion while simplifying the actuation system.
+            </p>
+        </div>
 
-        <div class="mechanical-image">
+        <div class="feature-box">
+            <h4>Elastic Extension</h4>
+            <p>
+                Rubber bands provide passive finger extension, allowing the fingers
+                to reopen without additional actuators.
+            </p>
+        </div>
 
-            <img src="Images/Four-Finger.png" alt="CAD Model">
+        <div class="feature-box">
+            <h4>Pin Joints</h4>
+            <p>
+                M3 screw pins create durable rotational joints that are simple to
+                assemble, service, and redesign.
+            </p>
+        </div>
 
-            <video controls loop playsinline>
+        <div class="feature-box">
+            <h4>Modular Design</h4>
+            <p>
+                Individual fingers can be redesigned independently and SG90 servos are 
+                currently attached to a temporary mounting system.
+            </p>
+        </div>
 
-                <source src="Videos/Four Finger Actuation.mov" type="video/mp4">
+    </div>
 
-            </video>
+    <div class="mechanical-media">
+
+        <div class="media-card">
+
+            <img src="Images/Four-Finger.png"
+                 alt="CAD Model">
+
+            <h4>CAD Assembly</h4>
+
+            <p>
+                SolidWorks model of the four-finger prototype showing tendon
+                routing holes, finger joints, and the modular architecture.
+            </p>
 
         </div>
 
+        <div class="media-card">
 
-        <!-- Right Side -->
+            <video controls loop playsinline>
+                <source src="Videos/Four Finger Actuation.mov" type="video/mp4">
+            </video>
 
-        <div class="mechanical-content">
-
-            <h3>Design Philosophy</h3>
+            <h4>Prototype Demonstration</h4>
 
             <p>
-
-                This prototype focuses on achieving reliable grasping through a
-                simplified tendon-driven mechanism. Each finger is independently
-                actuated by a servo motor while remaining modular so components can
-                be redesigned without rebuilding the entire hand.
-
+                Bench-top testing of the tendon-driven mechanism using
+                Arduino-controlled SG90 servo motors to validate independent
+                finger actuation.
             </p>
-
-            <div class="feature-grid">
-
-                <div class="feature-box">
-
-                    <h4>Actuation</h4>
-
-                    <p>
-                        Fishing line tendons driven by SG90 servos generate finger
-                        flexion.
-                    </p>
-
-                </div>
-
-                <div class="feature-box">
-
-                    <h4>Extension</h4>
-
-                    <p>
-                        Elastic bands provide passive finger extension once tendon
-                        tension is released.
-                    </p>
-
-                </div>
-
-                <div class="feature-box">
-
-                    <h4>Construction</h4>
-
-                    <p>
-                        Modular PLA components assembled using M3 fasteners and
-                        printed on an FDM 3D printer.
-                    </p>
-
-                </div>
-
-                <div class="feature-box">
-
-                    <h4>Manufacturing</h4>
-
-                    <p>
-                        Designed entirely in SolidWorks with iterative CAD and
-                        prototype testing.
-                    </p>
-
-                </div>
-
-            </div>
 
         </div>
 
@@ -330,52 +309,204 @@
     <h2>Electronics &amp; Control</h2>
 
     <p class="section-intro">
-        The prototype is controlled using an Arduino Uno that independently commands
-        four SG90 micro servos through PWM outputs. An external regulated 5V supply
-        powers the servos while sharing a common ground with the Arduino to ensure
-        stable operation.
+        An Arduino Uno independently controls four SG90 servos through PWM outputs,
+        while an external regulated 5V power supply powers the actuators using a
+        shared common ground.
     </p>
 
-    <div class="electronics-grid">
+    <!-- Feature Cards -->
+
+    <div class="electronics-features">
 
         <div class="electronics-card">
-
-            <h3>Current Hardware</h3>
-
-            <ul>
-                <li>Arduino Uno</li>
-                <li>4× SG90 Micro Servos</li>
-                <li>External Regulated 5V Power Supply</li>
-                <li>PWM Servo Control</li>
-                <li>Arduino IDE Firmware</li>
-            </ul>
-
+            <h3>Controller</h3>
+            <p>
+                Arduino Uno generates independent PWM signals for each finger servo.
+            </p>
         </div>
 
         <div class="electronics-card">
+            <h3>Actuation</h3>
+            <p>
+                Four SG90 micro servos drive tendon motion for independent finger flexion.
+            </p>
+        </div>
 
-            <h3>Future EMG Integration</h3>
+        <div class="electronics-card">
+            <h3>Power</h3>
+            <p>
+                External regulated 5V supply powers the servos while sharing a common ground.
+            </p>
+        </div>
 
-            <ul>
-                <li>MyoWare 2.0 EMG Sensor</li>
-                <li>MATLAB Signal Filtering</li>
-                <li>EMG Feature Extraction</li>
-                <li>Gesture Classification</li>
-                <li>Real-Time Prosthetic Control</li>
-            </ul>
-
+        <div class="electronics-card">
+            <h3>Future EMG</h3>
+            <p>
+                MyoWare sensor, MATLAB filtering, feature extraction, and gesture recognition.
+            </p>
         </div>
 
     </div>
 
-    <div class="wiring-diagram">
+    <!-- Images -->
 
-        <img src="Images/Finger Wiring.png" alt="Arduino Wiring Diagram">
+    <div class="electronics-images">
 
-        <p class="diagram-caption">
-            Wiring diagram showing independent PWM control of four SG90 servos with a shared
-            external 5V power rail and common ground reference.
-        </p>
+        <div class="electronics-image">
+            <img src="Images/Finger Wiring.png"
+                 alt="Servo Wiring Diagram">
+            <p class="diagram-caption">
+                Servo wiring diagram showing the shared power rail and Arduino PWM outputs.
+            </p>
+        </div>
+
+        <div class="electronics-image">
+            <img src="Images/Breadboard.jpg"
+                 alt="Breadboard Assembly">
+            <p class="diagram-caption">
+                Physical electronics prototype with Arduino, breadboard, and external power distribution.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- Engineering Development Log -->
+<!-- ========================================= -->
+
+<section class="timeline">
+
+    <h2>Engineering Development Log</h2>
+
+    <p class="section-intro">
+        The prototype has been developed through iterative CAD design, rapid
+        prototyping, electronics integration, and mechanical testing. Each stage
+        introduced new design challenges that guided the next iteration of the
+        system.
+    </p>
+
+    <div class="timeline-grid">
+
+        <!-- June 25 -->
+        <div class="timeline-card">
+
+            <div class="timeline-date">
+                June 25, 2026
+            </div>
+
+            <h3>Concept Research</h3>
+
+            <p>
+                Investigated existing prosthetic hand mechanisms, tendon-driven
+                actuation, and wrist designs to establish the overall architecture
+                for the project.
+            </p>
+
+            <img src="Images/Timeline/research.png" alt="Research">
+
+        </div>
+
+        <!-- June 26-29 -->
+
+        <div class="timeline-card">
+
+            <div class="timeline-date">
+                June 26 – June 29
+            </div>
+
+            <h3>First Finger Prototype</h3>
+
+            <p>
+                Designed the fingertip, middle phalanx, and base in SolidWorks.
+                Printed multiple iterations to improve joint alignment, screw
+                tolerances, and tendon routing.
+            </p>
+
+            <img src="Images/Timeline/finger-cad.png" alt="CAD Finger">
+
+        </div>
+
+        <!-- July 1-3 -->
+
+        <div class="timeline-card">
+
+            <div class="timeline-date">
+                July 1 – July 3
+            </div>
+
+            <h3>Tendon Mechanism</h3>
+
+            <p>
+                Replaced the original tendon routing, increased hole sizes,
+                integrated elastic bands, and achieved the first fully functional
+                tendon-driven finger.
+            </p>
+
+            <img src="Images/Timeline/finger-test.jpg" alt="Finger Test">
+
+        </div>
+
+        <!-- July 4-9 -->
+
+        <div class="timeline-card">
+
+            <div class="timeline-date">
+                July 4 – July 9
+            </div>
+
+            <h3>Servo Integration</h3>
+
+            <p>
+                Transitioned from manual tendon actuation to SG90 servos using an
+                Arduino Uno. Developed servo mounting hardware and custom firmware
+                for adjustable finger motion.
+            </p>
+
+            <img src="Images/Timeline/servo.jpg" alt="Servo">
+
+        </div>
+
+        <!-- July 10 -->
+
+        <div class="timeline-card">
+
+            <div class="timeline-date">
+                July 10
+            </div>
+
+            <h3>Four-Servo Electronics</h3>
+
+            <p>
+                Designed the complete four-servo wiring architecture, validated the
+                circuit in TinkerCAD, and prepared the hardware using an external
+                regulated power supply.
+            </p>
+
+            <img src="Images/Timeline/wiring.png" alt="Wiring">
+
+        </div>
+
+        <!-- Current -->
+
+        <div class="timeline-card current">
+
+            <div class="timeline-date">
+                Current
+            </div>
+
+            <h3>Four-Finger Prototype</h3>
+
+            <p>
+                Building and testing the complete four-finger mechanism while
+                calibrating tendon lengths, servo angles, and mechanical alignment
+                prior to palm development and EMG integration.
+            </p>
+
+            <img src="Images/Timeline/prototype.jpg" alt="Current Prototype">
+
+        </div>
 
     </div>
 
