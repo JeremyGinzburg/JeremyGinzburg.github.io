@@ -96,8 +96,7 @@
 
                 Researchers in <strong>Duke University's David Lab</strong>
                 manually opened and reattached hundreds of test tube caps
-                during routine sample preparation, creating a slow,
-                repetitive workflow.
+                during routine sample preparation.
 
             </p>
 
@@ -150,78 +149,147 @@
 <!-- Mechanical Design -->
 <!-- ========================================= -->
 
-<section>
+<section class="mechanical" id="mechanical">
 
     <h2>Mechanical Design</h2>
 
-    <p class="section-intro">
+    <div class="mechanical-layout">
 
-        I was responsible for the CAD, mechanical design, and assembly of the
-        tube transport mechanism, rack-and-pinion drive, and portions of the
-        cap gripper. The design emphasized reliable tube positioning,
-        manufacturability, and rapid prototyping using 3D-printed PLA
-        components.
-
-    </p>
-
-    <!-- Design Features -->
-
-    <div class="feature-grid">
-
-        <div class="feature-box">
-            <h3>Rack &amp; Pinion</h3>
+        <div class="mechanical-text">
 
             <p>
-                Designed a motor-driven rack-and-pinion mechanism that moved
-                eight test tubes into and out of the machine during each cycle.
+
+                I led the CAD design and mechanical development of the automated
+                tube opener, focusing on reliable cap removal while maintaining
+                laboratory safety and minimizing cross-contamination.
+
+                The system combines a spring-loaded gripper, rack-and-pinion
+                transport mechanism, custom silicone tube holders, and a
+                fully 3D printed PLA structure into a compact automated device.
+
             </p>
+
+            <div class="mechanical-features">
+
+                <div class="feature">
+
+                    <h3>Spring Gripper</h3>
+
+                    <p>
+                        Spring-loaded mechanism securely grips each cap while a
+                        threaded shaft converts motor rotation into simultaneous
+                        upward translation and cap removal.
+                    </p>
+
+                </div>
+
+                <div class="feature">
+
+                    <h3>Rack & Pinion</h3>
+
+                    <p>
+                        A geared DC motor drives a rack-and-pinion system that
+                        moves the tube holder smoothly into and out of the
+                        machine.
+                    </p>
+
+                </div>
+
+                <div class="feature">
+
+                    <h3>Tube Retention</h3>
+
+                    <p>
+                        Custom silicone moldings securely hold each test tube in
+                        place while preventing unwanted rotation.
+                    </p>
+
+                </div>
+
+                <div class="feature">
+
+                    <h3>Manufacturing</h3>
+
+                    <p>
+                        Entire mechanism designed in SolidWorks and fabricated
+                        using FDM 3D printed PLA components.
+                    </p>
+
+                </div>
+
+            </div>
+
         </div>
 
-        <div class="feature-box">
-            <h3>Spring Gripper</h3>
 
-            <p>
-                Developed a spring-loaded gripper that securely grasped each
-                tube cap while allowing it to travel upward as the cap
-                unscrewed.
-            </p>
-        </div>
+        <div class="mechanical-gallery">
 
-        <div class="feature-box">
-            <h3>Silicone Tube Holders</h3>
+    <!-- Spring Gripper -->
 
-            <p>
-                Created custom silicone inserts that prevented the tubes from
-                rotating while protecting delicate laboratory glassware.
-            </p>
-        </div>
+    <div class="gallery-card">
 
-        <div class="feature-box">
-            <h3>Rapid Prototyping</h3>
+        <img src="Images/Gripper.png"
+             alt="Spring Gripper">
 
-            <p>
-                Iteratively redesigned and 3D printed PLA components to improve
-                alignment, reliability, and assembly throughout the semester.
-            </p>
-        </div>
+        <p>Spring-Loaded Cap Gripper</p>
 
     </div>
 
-    <div class="mechanical-gallery">
 
-    <img src="Images/full-device.jpg"
-         alt="Final prototype">
+    <!-- Rack & Pinion -->
 
-    <img src="Images/cad-assembly.png"
-         alt="SolidWorks assembly">
+    <div class="gallery-card">
 
-    <img src="Images/rack-pinion.jpg"
-         alt="Rack and pinion mechanism">
+        <img src="Images/Gear.jpg"
+             alt="Rack and Pinion">
 
-    <img src="Images/gripper.jpg"
-         alt="Spring gripper">
+        <p>Rack-and-Pinion Transport</p>
+
+    </div>
+
+
+    <!-- Silicone Holder -->
+
+    <div class="gallery-card">
+
+        <img src="Images/Rack.jpeg"
+             alt="Silicone Tube Holder">
+
+        <p>Custom Silicone Tube Holder</p>
+
+    </div>
+
+
+    <!-- Working Video -->
+
+    <div class="gallery-card">
+
+        <video controls playsinline>
+
+            <source src="Videos/Uncapping.mp4"
+                    type="video/mp4">
+
+        </video>
+
+        <p>Automated Cap Removal Demonstration</p>
+
+    </div>
+
+
+    <!-- Final Prototype -->
+
+    <div class="gallery-card gallery-wide">
+
+        <img src="Images/Prototype.jpg"
+             alt="Finished Prototype">
+
+        <p>Completed Proof-of-Concept Prototype</p>
+
+    </div>
 
 </div>
+
+    </div>
 
 </section>
 
