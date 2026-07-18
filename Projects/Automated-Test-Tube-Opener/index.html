@@ -149,145 +149,243 @@
 <!-- Mechanical Design -->
 <!-- ========================================= -->
 
-<section class="mechanical" id="mechanical">
+<section class="mechanical-design">
 
     <h2>Mechanical Design</h2>
 
-    <div class="mechanical-layout">
+    <p class="section-intro">
+        The automated tube opener was designed as a modular electromechanical
+        system composed of independently developed mechanisms. Each subsystem
+        was prototyped, tested, and refined before integration into the final
+        eight-tube automation platform.
+    </p>
 
-        <div class="mechanical-text">
+    <div class="mechanical-gallery">
 
-            <p>
+        <!-- Cap Gripper -->
 
-                I led the CAD design and mechanical development of the automated
-                tube opener, focusing on reliable cap removal while maintaining
-                laboratory safety and minimizing cross-contamination.
+        <div class="gallery-card">
 
-                The system combines a spring-loaded gripper, rack-and-pinion
-                transport mechanism, custom silicone tube holders, and a
-                fully 3D printed PLA structure into a compact automated device.
-
-            </p>
-
-            <div class="mechanical-features">
-
-                <div class="feature">
-
-                    <h3>Spring Gripper</h3>
-
-                    <p>
-                        Spring-loaded mechanism securely grips each cap while a
-                        threaded shaft converts motor rotation into simultaneous
-                        upward translation and cap removal.
-                    </p>
-
-                </div>
-
-                <div class="feature">
-
-                    <h3>Rack & Pinion</h3>
-
-                    <p>
-                        A geared DC motor drives a rack-and-pinion system that
-                        moves the tube holder smoothly into and out of the
-                        machine.
-                    </p>
-
-                </div>
-
-                <div class="feature">
-
-                    <h3>Tube Retention</h3>
-
-                    <p>
-                        Custom silicone moldings securely hold each test tube in
-                        place while preventing unwanted rotation.
-                    </p>
-
-                </div>
-
-                <div class="feature">
-
-                    <h3>Manufacturing</h3>
-
-                    <p>
-                        Entire mechanism designed in SolidWorks and fabricated
-                        using FDM 3D printed PLA components.
-                    </p>
-
-                </div>
-
+            <div class="gallery-image gripper-image">
+                <img src="Images/Tube-In-Gripper.jpeg"
+                     alt="Spring-Loaded Cap Gripper">
             </div>
+
+            <h3>Spring-Loaded Cap Gripper</h3>
 
         </div>
 
+        <!-- Rack and Pinion -->
 
-        <div class="mechanical-gallery">
+        <div class="gallery-card">
 
-    <!-- Spring Gripper -->
+            <div class="gallery-image">
+                <img src="Images/Gear.jpg"
+                     alt="Rack and Pinion Drive">
+            </div>
 
-    <div class="gallery-card">
+            <h3>Rack-and-Pinion Drive</h3>
 
-        <img src="Images/Gripper.png"
-             alt="Spring Gripper">
+        </div>
 
-        <p>Spring-Loaded Cap Gripper</p>
+        <!-- Tube Holder -->
 
-    </div>
+        <div class="gallery-card">
 
+            <div class="gallery-image">
+                <img src="Images/Rack.jpeg"
+                     alt="Silicone Tube Holder">
+            </div>
 
-    <!-- Rack & Pinion -->
+            <h3>Silicone Tube Holder</h3>
 
-    <div class="gallery-card">
+        </div>
 
-        <img src="Images/Gear.jpg"
-             alt="Rack and Pinion">
+        <!-- Demo -->
 
-        <p>Rack-and-Pinion Transport</p>
+        <div class="gallery-card">
 
-    </div>
+            <div class="gallery-image">
 
+                <video controls preload="metadata">
+                    <source src="Videos/Uncapping.mov" type="video/mp4">
+                </video>
 
-    <!-- Silicone Holder -->
+            </div>
 
-    <div class="gallery-card">
+            <h3>Automated Cap Removal</h3>
 
-        <img src="Images/Rack.jpeg"
-             alt="Silicone Tube Holder">
-
-        <p>Custom Silicone Tube Holder</p>
-
-    </div>
-
-
-    <!-- Working Video -->
-
-    <div class="gallery-card">
-
-        <video controls playsinline>
-
-            <source src="Videos/Uncapping.mp4"
-                    type="video/mp4">
-
-        </video>
-
-        <p>Automated Cap Removal Demonstration</p>
+        </div>
 
     </div>
 
+</section>
 
-    <!-- Final Prototype -->
+<!-- ========================================= -->
+<!-- Automation System -->
+<!-- ========================================= -->
 
-    <div class="gallery-card gallery-wide">
+<section class="automation-system">
 
-        <img src="Images/Prototype.jpg"
-             alt="Finished Prototype">
+    <h2>Automation System</h2>
 
-        <p>Completed Proof-of-Concept Prototype</p>
+    <p class="automation-intro">
+        An Arduino Uno coordinates nine DC motors to automate the tube uncapping
+        and recapping process. Eight motors independently rotate the cap grippers,
+        while a ninth motor drives the rack-and-pinion transport mechanism. A
+        single push button initiates each stage of the workflow, allowing users
+        to process samples with minimal manual interaction.
+    </p>
+
+    <!-- Hardware Cards -->
+
+    <div class="automation-grid">
+
+        <div class="automation-card">
+            <h3>Controller</h3>
+            <ul>
+                <li>Arduino Uno microcontroller</li>
+                <li>Hard-coded motor rotations</li>
+            </ul>
+        </div>
+
+        <div class="automation-card">
+            <h3>Motor System</h3>
+            <ul>
+                <li>9 DC motors</li>
+                <li>8 cap gripper motors</li>
+                <li>1 rack drive motor</li>
+            </ul>
+        </div>
+
+        <div class="automation-card">
+            <h3>User Interface</h3>
+            <ul>
+                <li>Single push button</li>
+                <li>Two-stage operation</li>
+                <li>Hands-free cycle</li>
+            </ul>
+        </div>
+
+        <div class="automation-card">
+            <h3>Power</h3>
+            <ul>
+                <li>5V wall adapter</li>
+                <li>Open-loop automation</li>
+                <li>Sensorless operation</li>
+            </ul>
+        </div>
 
     </div>
-
+    <div class="sequence-divider">
+    <span>Workflow</span>
 </div>
+
+    <!-- Workflow -->
+
+        <div class="workflow">
+
+        <div class="step">Press<br>Button</div>
+
+        <div class="arrow">→</div>
+
+        <div class="step">Unscrew<br>8 Caps</div>
+
+        <div class="arrow">→</div>
+
+        <div class="step">Rack<br>Slides Out</div>
+
+        <div class="arrow">→</div>
+
+        <div class="step">Add<br>Chemicals</div>
+
+        <div class="arrow">→</div>
+
+        <div class="step">Press<br>Button</div>
+
+        <div class="arrow">→</div>
+
+        <div class="step">Rack Returns<br>&amp; Recaps</div>
+
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- Testing & Validation -->
+<!-- ========================================= -->
+
+<section class="testing-section">
+
+    <h2>Testing & Validation</h2>
+
+    <p class="section-intro">
+        The completed prototype was evaluated through repeated functional testing
+        to verify that the mechanical and automation systems satisfied the primary
+        project requirements. Individual subsystems were tested during development,
+        followed by more than twenty full-system demonstrations.
+    </p>
+
+    <div class="testing-table">
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Validation Metric</th>
+                    <th>Design Goal</th>
+                    <th>Measured Result</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>Simultaneous Tube Processing</td>
+                    <td>Open 8 tubes at once</td>
+                    <td>Successfully uncapped and recapped 8 tubes simultaneously</td>
+                    <td>✅</td>
+                </tr>
+
+                <tr>
+                    <td>Processing Time</td>
+                    <td>Reduce manual workflow</td>
+                    <td>60 seconds for 8 tubes (≈24× faster per tube than manual processing)</td>
+                    <td>✅</td>
+                </tr>
+
+                <tr>
+                    <td>System Reliability</td>
+                    <td>Repeatable operation</td>
+                    <td>~95% success rate across 20+ complete demonstrations</td>
+                    <td>✅</td>
+                </tr>
+
+                <tr>
+                    <td>Cap Contamination Prevention</td>
+                    <td>Never place caps on bench</td>
+                    <td>Caps remained secured in the grippers throughout the cycle</td>
+                    <td>✅</td>
+                </tr>
+
+                <tr>
+                    <td>User Interaction</td>
+                    <td>Minimal operator involvement</td>
+                    <td>Single-button operation for each stage of the workflow</td>
+                    <td>✅</td>
+                </tr>
+
+                <tr>
+                    <td>Tube Alignment</td>
+                    <td>Consistent positioning</td>
+                    <td>Tube holder maintained reliable alignment during testing</td>
+                    <td>✅</td>
+                </tr>
+
+            </tbody>
+
+        </table>
 
     </div>
 
