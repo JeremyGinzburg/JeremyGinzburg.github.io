@@ -1,3 +1,6 @@
+html, body{
+    overflow-x:hidden;
+}
 /* =====================================================
    GENERAL
 ===================================================== */
@@ -112,119 +115,124 @@ section > h2{
     font-size:1.20rem;
     line-height:2;
     color:#dbe4ee;
-    margin-bottom:55px;
+    margin-bottom:25px;
     max-width:none;
 }
 
 
-/* =====================================================
+/* ==========================================
    HERO
-===================================================== */
+========================================== */
 
 .hero{
+
+    width:min(90%,1320px);
+
+    margin:30px auto 90px;
+
     display:grid;
-    grid-template-columns:1.25fr .9fr;
-    align-items:center;
+    grid-template-columns:1.05fr .95fr;
+
     gap:70px;
 
-    margin-top:10px;   /* adjust 40–70px to taste */
+    align-items:center;
+
 }
 
-.hero h1{
-    font-size:2.9rem;
-    line-height:1.1;
-    margin-bottom:20px;
+.hero-content h1{
+
+    font-size:2.8rem;
+
+    line-height:1.2;
+
+    margin-bottom:16px;
+
 }
 
 .hero-subtitle{
 
     color:#38bdf8;
-    font-size:1.45rem;
-    font-weight:700;
+
+    font-size:1.25rem;
+
+    font-weight:600;
 
     margin-bottom:30px;
+
 }
 
 .hero-description{
 
-    max-width:680px;
+    max-width:650px;
 
     font-size:1.25rem;
 
-    line-height:2;
+    line-height:1.9;
+
+    color:#d7e3ef;
+
+    margin-bottom:22px;
+
+}
+
+.hero-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:16px;
+
+}
+
+.hero-tags span{
+
+    background:#1e293b;
+
+    color:#38bdf8;
+
+    padding:12px 22px;
+
+    border-radius:999px;
+
+    font-weight:600;
+
+    font-size:1rem;
+
+    transition:.25s;
+
+}
+
+.hero-tags span:hover{
+
+    transform:translateY(-3px);
+
+    background:#26344a;
+
 }
 
 .hero-image{
-    text-align:center;
+
+    display:flex;
+
+    justify-content:center;
+
 }
 
 .hero-image img{
 
     width:100%;
+
     max-width:520px;
 
-    height:auto;
-
-    border-radius:20px;
-
-    object-fit:cover;
+    border-radius:24px;
 
     border:4px solid #38bdf8;
-}
-.project-links{
 
-    margin:28px 0 12px;
+    display:block;
 
-    display:flex;
-}
+    box-shadow:0 22px 55px rgba(0,0,0,.35);
 
-.project-button{
-
-    display:inline-flex;
-
-    align-items:center;
-
-    padding:14px 26px;
-
-    border-radius:999px;
-
-    background:#1e293b;
-
-    border:2px solid #38bdf8;
-
-    color:#38bdf8;
-
-    text-decoration:none;
-
-    font-weight:600;
-    
-    font-size:1.05rem;
-
-    transition:all .25s ease;
-}
-
-.project-button:hover{
-
-    background:#38bdf8;
-
-    color:#0f172a;
-
-    transform:translateY(-3px);
-
-    box-shadow:0 10px 25px rgba(56,189,248,.30);
-}
-
-.repo-description{
-
-    margin-top:14px;
-
-    color:#94a3b8;
-
-    font-size:1rem;
-
-    line-height:1.7;
-
-    max-width:700px;
 }
 
 /* =====================================================
