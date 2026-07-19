@@ -829,3 +829,70 @@ Responsive
     }
 
 }
+/* =========================================
+   Mobile Responsive
+========================================= */
+
+@media (max-width: 768px) {
+
+    html{
+        overflow-x:hidden;
+    }
+
+    body{
+        overflow-x:hidden;
+    }
+
+    section{
+        width:92%;
+        max-width:none;
+        padding:40px 0;
+    }
+
+    section h2{
+        font-size:2.2rem;
+        text-align:center;
+        transform:none;
+        margin-bottom:18px;
+    }
+
+    p,
+    li{
+        font-size:1rem;
+        line-height:1.7;
+    }
+
+    img,
+    video{
+        max-width:100%;
+        height:auto;
+    }
+
+    /* Stack all grids into one column */
+
+    .overview-grid,
+    .mechanical-gallery,
+    .automation-cards,
+    .results-grid{
+        grid-template-columns:1fr;
+    }
+
+    /* Workflow scrolls horizontally instead of overflowing */
+
+    .workflow{
+        overflow-x:auto;
+        justify-content:flex-start;
+        padding-bottom:10px;
+    }
+
+    /* Tables scroll on small screens */
+
+    .testing-table{
+        overflow-x:auto;
+    }
+
+    table{
+        min-width:650px;
+    }
+
+}

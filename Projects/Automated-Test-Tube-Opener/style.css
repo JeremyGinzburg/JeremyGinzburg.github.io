@@ -1129,50 +1129,70 @@ ENGINEERING DEVELOPMENT TIMELINE
 Responsive
 =========================================*/
 
-@media (max-width: 900px){
+/* =========================================
+   Mobile Responsive
+========================================= */
 
-    h1{
-        font-size:3rem;
+@media (max-width: 768px) {
+
+    html{
+        overflow-x:hidden;
     }
 
-    h2{
-        font-size:2.4rem;
+    body{
+        overflow-x:hidden;
     }
 
     section{
-        padding:40px 20px;
+        width:92%;
+        max-width:none;
+        padding:40px 0;
     }
 
-    .hero{
-        flex-direction:column;
-        gap:40px;
+    section h2{
+        font-size:2.2rem;
+        text-align:center;
+        transform:none;
+        margin-bottom:18px;
     }
 
-    .hero-image img{
-        width:100%;
-        max-width:500px;
+    p,
+    li{
+        font-size:1rem;
+        line-height:1.7;
     }
+
+    img,
+    video{
+        max-width:100%;
+        height:auto;
+    }
+
+    /* Stack all grids into one column */
 
     .overview-grid,
-    .feature-grid,
+    .mechanical-gallery,
     .automation-cards,
-    .mechanical-gallery{
-
+    .results-grid{
         grid-template-columns:1fr;
-
     }
 
-    .sequence-flow{
+    /* Workflow scrolls horizontally instead of overflowing */
 
-        flex-wrap:wrap;
-        justify-content:center;
-
+    .workflow{
+        overflow-x:auto;
+        justify-content:flex-start;
+        padding-bottom:10px;
     }
+
+    /* Tables scroll on small screens */
 
     .testing-table{
-
         overflow-x:auto;
+    }
 
+    table{
+        min-width:650px;
     }
 
 }
