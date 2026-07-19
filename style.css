@@ -305,11 +305,21 @@ Responsive
     }
 
     section h2{
-        font-size:2.2rem;
+
+        font-size:2.3rem;
+
+        line-height:1.2;
+
         text-align:center;
-        transform:translateX(12px);   /* push slightly right */
-        margin-bottom:18px;
+
+        transform:none !important;
+
+        margin-left:0;
+
+        padding-left:0;
+
     }
+
 
     .hero{
         width:96%;
