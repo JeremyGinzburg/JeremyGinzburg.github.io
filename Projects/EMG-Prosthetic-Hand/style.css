@@ -778,3 +778,54 @@ ENGINEERING DEVELOPMENT TIMELINE
 
     font-style:italic;
 }
+/*=========================================
+Responsive
+=========================================*/
+
+@media (max-width: 900px){
+
+    h1{
+        font-size:3rem;
+    }
+
+    h2{
+        font-size:2.4rem;
+    }
+
+    section{
+        padding:40px 20px;
+    }
+
+    .hero{
+        flex-direction:column;
+        gap:40px;
+    }
+
+    .hero-image img{
+        width:100%;
+        max-width:500px;
+    }
+
+    .overview-grid,
+    .feature-grid,
+    .automation-cards,
+    .mechanical-gallery{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .sequence-flow{
+
+        flex-wrap:wrap;
+        justify-content:center;
+
+    }
+
+    .testing-table{
+
+        overflow-x:auto;
+
+    }
+
+}
