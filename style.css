@@ -296,101 +296,40 @@ footer {
 Responsive
 =========================================*/
 
-@media (max-width: 900px){
-
-    h1{
-        font-size:3rem;
-    }
-
-    h2{
-        font-size:2.4rem;
-    }
-
-    section{
-        padding:40px 20px;
-    }
-
-    .hero{
-        flex-direction:column;
-        gap:40px;
-    }
-
-    .hero-image img{
-        width:100%;
-        max-width:500px;
-    }
-
-    .overview-grid,
-    .feature-grid,
-    .automation-cards,
-    .mechanical-gallery{
-
-        grid-template-columns:1fr;
-
-    }
-
-    .sequence-flow{
-
-        flex-wrap:wrap;
-        justify-content:center;
-
-    }
-
-    .testing-table{
-
-        overflow-x:auto;
-
-    }
-
-}
 @media (max-width:768px){
 
     section,
     footer{
-        width:92%;
+        width:96%;
         padding:30px 0;
     }
 
     section h2{
-
         font-size:2.2rem;
-
         text-align:center;
-
-        transform:none;      /* THIS fixes it */
-
+        transform:translateX(12px);   /* push slightly right */
         margin-bottom:18px;
-
     }
 
     .hero{
-
+        width:96%;
         flex-direction:column;
-
         text-align:center;
-
     }
 
     .hero h1{
-
         font-size:2.6rem;
-
-        transform:none;
-
+        transform:translateX(10px);   /* undo desktop shift */
     }
 
     .hero-subtitle,
     .hero-school,
     .hero-description{
-
         margin-left:0;
-
     }
 
     .hero-image{
-
         transform:none;
-
     }
 
 }
