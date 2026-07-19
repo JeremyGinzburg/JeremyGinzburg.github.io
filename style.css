@@ -320,26 +320,23 @@ Responsive
 
     }
 
+.hero{
+    width:95%;
+}
 
-    .hero{
-        width:96%;
-        flex-direction:column;
-        text-align:center;
-    }
+.hero h1{
+    transform:none;
+}
 
-    .hero h1{
-        font-size:2.6rem;
-        transform:translateX(10px);   /* undo desktop shift */
-    }
+.hero-image{
+    transform:none;
+}
+    
 
     .hero-subtitle,
     .hero-school,
     .hero-description{
         margin-left:0;
-    }
-
-    .hero-image{
-        transform:none;
     }
 
 }
